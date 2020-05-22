@@ -9,7 +9,7 @@ import org.junit.Test;
 @Slf4j
 public class BasicTest {
     ConnectionMessage connectionMessage = new ConnectionMessage("test", "123456",
-            "http://127.0.0.1:8086", "test", "autogen");
+            "http://:8086", "test", "autogen");
     InfluxOperationHelper influxOperationHelper = new InfluxOperationHelper(connectionMessage);
 
     SoftData softData = new SoftData("NH3", "WARN", 53.1, System.currentTimeMillis());
